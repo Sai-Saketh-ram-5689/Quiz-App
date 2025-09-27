@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+    <h1 class="display-4 fw-bold">Welcome to the Quiz App 🎓</h1>
+    <p class="lead">The best platform to create, manage, and take quizzes.</p>
+    <hr class="my-4">
+    <p>Challenge your knowledge or test your students with our easy-to-use interface.</p>
+    {% if not current_user.is_authenticated %}
+        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Get Started</a>
+        <a href="{{ url_for('login') }}" class="btn btn-secondary btn-lg">Login</a>
+    {% else %}
+        <a href="{{ url_for('dashboard') }}" class="btn btn-success btn-lg">Go to Your Dashboard</a>
+    {% endif %}
+</div>
+{% endblock %}
