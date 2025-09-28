@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="form-wrapper" aria-labelledby="loginTitle">
+    <h2 id="loginTitle">Login to Your Account</h2>
+    <form method="POST" id="loginForm" novalidate>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-control" required aria-required="true">
+            <div class="invalid-feedback">Please enter your username.</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required aria-required="true">
+            <div class="invalid-feedback">Please enter your password.</div>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+        </div>
+    </form>
+</section>
+{% endblock %}
