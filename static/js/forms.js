@@ -1,8 +1,3 @@
-/* Minimal jQuery-based form validation and UI helpers
-   - Adds Bootstrap 'is-invalid' classes to invalid fields
-   - Confirms when teacher clicks 'Finish' on add_question
-   - Prevents submission if required fields are empty (extra safety)
-*/
 $(document).ready(function () {
     // Generic form validation on submit
     $('form[novalidate]').on('submit', function (e) {
