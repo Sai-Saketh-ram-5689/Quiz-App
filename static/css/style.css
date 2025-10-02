@@ -1,0 +1,117 @@
+/* === Google Font Import === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* === CSS Variables for Theming === */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --background-color: #eef2f5;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --border-radius: 0.5rem;
+}
+
+/* === General Styles === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--dark-color);
+}
+
+.navbar-dark.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* === Form Wrapper for Login/Register/Create === */
+.form-wrapper {
+    max-width: 550px;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* === Card Styles for Dashboard === */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card-title {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* === Quiz Taking Page Styles === */
+.question-card {
+    margin-bottom: 1.5rem;
+}
+
+.question-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.quiz-option {
+    display: block;
+    background: var(--light-color);
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.quiz-option:hover {
+    background: #e2e6ea;
+    border-color: #adb5bd;
+}
+
+.quiz-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* === Timer Style === */
+#timer {
+    position: sticky;
+    top: 20px;
+    z-index: 1020;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+    border-color: var(--warning-color);
+}
+
+/* === Hero Section for Index Page === */
+.hero {
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
