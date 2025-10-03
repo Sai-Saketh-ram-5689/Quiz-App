@@ -8,7 +8,6 @@ from sqlalchemy.exc import IntegrityError
 from dotenv import load_dotenv
 from sqlalchemy import text
 
-# Load environment variables from a .env file if present
 load_dotenv()
 
 app = Flask(__name__)
